@@ -6,11 +6,13 @@
 }
 
 .container{
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 25px; 
+    gap: 20px; 
+    width: 450px;
 }
 
 .buttons{
@@ -19,6 +21,7 @@
     gap: 20px;
     align-items: center;
     justify-content: center;
+    margin: auto;
 }
 .google-bt{
         background-color: #1A73E8;
@@ -109,7 +112,7 @@ form{
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    gap: 20px;
+    gap: 40px;
 }
 
 label{
@@ -124,13 +127,14 @@ label span{
 }
 
 label input{
-    width: 65%;
+    width: 90%;
     background-color: #f3f3f4;
     border: none;
     padding: 10px 20px;
     border-radius: 10px;
     outline: none;
     font-size: 14pt;
+    transition: background-color 0.2s ,border 0.2s, box-shadow 0.2s;
 }
 .section-inputs label input{
     width: 80%;
@@ -155,6 +159,12 @@ label input:focus{
     
 }
 
+.password input::placeholder{
+    color: #c2c2c2;
+    font-weight: 100;
+    font-size: 12pt;
+}
+
 .checkbox-label{
     display: flex;
     flex-direction: row;
@@ -165,7 +175,8 @@ label input:focus{
 }
 
 .checkbox-label span{
-    font-weight: 400;
+    font-weight: 300;
+    color: #b4b4b7;
 }
 
 /*boton submit*/
